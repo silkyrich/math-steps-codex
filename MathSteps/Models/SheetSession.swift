@@ -2,7 +2,7 @@ import Foundation
 
 final class SheetSession: ObservableObject {
     private(set) var problem: ArithmeticProblem
-    let method: any ArithmeticMethod
+    private(set) var method: any ArithmeticMethod
 
     @Published private(set) var layout: SheetLayout
     @Published private(set) var steps: [SheetStep]
@@ -23,10 +23,13 @@ final class SheetSession: ObservableObject {
         self.selectedCellID = steps.first?.highlightedCells.first
     }
 
-    func reset(problem: ArithmeticProblem) {
+    func reset(problem: ArithmeticProblem, method: (any ArithmeticMethod)? = nil) {
         self.problem = problem
-        let layout = method.makeLayout(for: problem)
-        let steps = method.makeSteps(for: problem, layout: layout)
+        if let method {
+            self.method = method
+        }
+        let layout = self.method.makeLayout(for: problem)
+        let steps = self.method.makeSteps(for: problem, layout: layout)
         self.layout = layout
         self.steps = steps
         self.marks = []

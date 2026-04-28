@@ -29,6 +29,7 @@ struct ArithmeticSheetView: View {
         }
         .padding(.vertical, 16)
         .background(Color(.secondarySystemBackground))
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     private var header: some View {
@@ -128,7 +129,7 @@ struct ArithmeticSheetView: View {
     }
 
     private var problemText: String {
-        session.problem.operands.map(String.init).joined(separator: " + ")
+        session.problem.operands.map(String.init).joined(separator: " \(session.problem.operation.symbol) ")
     }
 
     private func rowLabel(_ text: String?) -> some View {

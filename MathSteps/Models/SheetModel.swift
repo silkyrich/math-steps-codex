@@ -5,6 +5,32 @@ enum ArithmeticOperation: String, CaseIterable {
     case subtraction
     case multiplication
     case division
+
+    var symbol: String {
+        switch self {
+        case .addition:
+            return "+"
+        case .subtraction:
+            return "-"
+        case .multiplication:
+            return "x"
+        case .division:
+            return "÷"
+        }
+    }
+
+    var label: String {
+        switch self {
+        case .addition:
+            return "Addition"
+        case .subtraction:
+            return "Subtraction"
+        case .multiplication:
+            return "Multiplication"
+        case .division:
+            return "Division"
+        }
+    }
 }
 
 struct ArithmeticProblem: Equatable {

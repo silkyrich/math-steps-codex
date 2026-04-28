@@ -15,6 +15,7 @@
 		1A0000210000000000000006 /* SheetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000110000000000000006 /* SheetSession.swift */; };
 		1A0000210000000000000007 /* ArithmeticSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000110000000000000007 /* ArithmeticSheetView.swift */; };
 		1A0000210000000000000008 /* DigitPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000110000000000000008 /* DigitPadView.swift */; };
+		1A0000210000000000000009 /* ColumnSubtractionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000110000000000000009 /* ColumnSubtractionMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1A0000110000000000000006 /* SheetSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetSession.swift; sourceTree = "<group>"; };
 		1A0000110000000000000007 /* ArithmeticSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticSheetView.swift; sourceTree = "<group>"; };
 		1A0000110000000000000008 /* DigitPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitPadView.swift; sourceTree = "<group>"; };
+		1A0000110000000000000009 /* ColumnSubtractionMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnSubtractionMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0000110000000000000005 /* ColumnAdditionMethod.swift */,
+				1A0000110000000000000009 /* ColumnSubtractionMethod.swift */,
 			);
 			path = Methods;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				1A0000210000000000000003 /* SheetModel.swift in Sources */,
 				1A0000210000000000000004 /* ArithmeticMethod.swift in Sources */,
 				1A0000210000000000000005 /* ColumnAdditionMethod.swift in Sources */,
+				1A0000210000000000000009 /* ColumnSubtractionMethod.swift in Sources */,
 				1A0000210000000000000006 /* SheetSession.swift in Sources */,
 				1A0000210000000000000007 /* ArithmeticSheetView.swift in Sources */,
 				1A0000210000000000000008 /* DigitPadView.swift in Sources */,
